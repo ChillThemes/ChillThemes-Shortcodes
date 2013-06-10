@@ -14,7 +14,7 @@ Enables custom shortcodes for use in any of our Chill Themes.
 
 You can see a demo of all the shortcodes this plugin adds below:
 
-* <a href="http://demos.chillthemes.com/luminaria/shortcodes">ChillThemes Shortcodes</a>
+* http://demos.chillthemes.com/luminaria/shortcodes
 
 == Installation ==
 
