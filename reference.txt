@@ -1,0 +1,101 @@
+The shortcodes you see here are powered by our very <a href="https://github.com/chillthemes/chillthemes-shortcodes" target="_blank">ChillThemes Shortcodes</a> plugin. These shortcodes should work with any theme, but were made specifically for our themes. This plugin provides you with an extra icon on the <a href="http://en.support.wordpress.com/visual-editor" target="_blank">Visual Editor</a> that lets you easily add shortcodes into any post (or page).
+
+<h2>Accordion</h2>
+
+[chill_accordion]
+[chill_accordion_section icon="ok" title="Section One"]
+Section One Content
+[/chill_accordion_section]
+[chill_accordion_section icon="remove" title="Section Two"]
+Section Two Content
+[/chill_accordion_section]
+[/chill_accordion]
+
+<h2>Alerts</h2>
+
+[chill_alert type="alert" border_radius="1" icon="exclamation" icon_float="left" margin_bottom="20" margin_top="0"]Alert[/chill_alert]
+
+[chill_alert type="error" border_radius="1" icon="remove" icon_float="left" margin_bottom="20" margin_top="0"]Error[/chill_alert]
+
+[chill_alert type="info" border_radius="1" icon="info" icon_float="left" margin_bottom="20" margin_top="0"]Info[/chill_alert]
+
+[chill_alert type="success" border_radius="1" icon="ok" icon_float="left" margin_bottom="20" margin_top="0"]Success[/chill_alert]
+
+<h2>Buttons</h2>
+
+[chill_button color="black" url="#nowhere" title="Visit Link" target="blank" border_radius="0" box_shadow="1" icon="delicious" margin_bottom="20" margin_left="0" margin_right="10" margin_top="0"]Delicious[/chill_button]
+
+[chill_button color="blue" url="#nowhere" title="Visit Link" target="blank" border_radius="0" box_shadow="1" icon="dribbble" margin_bottom="20" margin_left="0" margin_right="10" margin_top="0"]Dribbble[/chill_button]
+
+[chill_button color="brown" url="#nowhere" title="Visit Link" target="blank" border_radius="0" box_shadow="1" icon="dropbox" margin_bottom="20" margin_left="0" margin_right="10" margin_top="0"]Dropbox[/chill_button]
+
+[chill_button color="green" url="#nowhere" title="Visit Link" target="blank" border_radius="0" box_shadow="1" icon="facebook-sign" margin_bottom="20" margin_left="0" margin_right="10" margin_top="0"]Facebook[/chill_button]
+
+[chill_button color="pink" url="#nowhere" title="Visit Link" target="blank" border_radius="0" box_shadow="1" icon="flickr-sign" margin_bottom="20" margin_left="0" margin_right="10" margin_top="0"]Flickr[/chill_button]
+
+[chill_button color="purple" url="#nowhere" title="Visit Link" target="blank" border_radius="0" box_shadow="1" icon="foursquare" margin_bottom="20" margin_left="0" margin_right="10" margin_top="0"]Foursquare[/chill_button]
+
+[chill_button color="red" url="#nowhere" title="Visit Link" target="blank" border_radius="0" box_shadow="1" icon="github" margin_bottom="20" margin_left="0" margin_right="10" margin_top="0"]GitHub[/chill_button]
+
+[chill_button color="white" url="#nowhere" title="Visit Link" target="blank" border_radius="0" box_shadow="1" icon="instagram" margin_bottom="20" margin_left="0" margin_right="10" margin_top="0"]Instagram[/chill_button]
+
+[chill_button color="yellow" url="#nowhere" title="Visit Link" target="blank" border_radius="0" box_shadow="1" icon="wordpress" margin_bottom="20" margin_left="0" margin_right="10" margin_top="0"]WordPress[/chill_button]
+
+<h2>Emphasis</h2>
+
+[chill_emphasis color="B94A48" style="normal" weight="400"]Convey[/chill_emphasis] meaning through [chill_emphasis color="3A87AD" style="italic" weight="400"]color[/chill_emphasis] with a handful of [chill_emphasis color="468847" style="normal" weight="600"]emphasis[/chill_emphasis] utility classes.
+
+<h2>Tabs</h2>
+
+[chill_tabs]
+[chill_tab title="Tab One"]
+Tab Content One
+[/chill_tab]
+[chill_tab title="Tab Two"]
+Tab Content Two
+[/chill_tab]
+[/chill_tabs]
+
+<h2>Columns</h2>
+
+[chill_column size="one_half"]<h3>one_half</h3>Is branched in my up strictly remember. Songs but chief has ham widow downs. Genius or so up vanity cannot. Large do tried going about water defer by. Silent son man she wished mother.[/chill_column]
+
+[chill_column size="one_half_last"]<h3>one_half_last</h3>Is branched in my up strictly remember. Songs but chief has ham widow downs. Genius or so up vanity cannot. Large do tried going about water defer by. Silent son man she wished mother.[/chill_column]
+
+[chill_column size="one_third"]<h3>one_third</h3>Talking chamber as shewing an it minutes. Trees fully of blind do. Exquisite favourite at do extensive listening.[/chill_column]
+
+[chill_column size="one_third"]<h3>one_third</h3>Talking chamber as shewing an it minutes. Trees fully of blind do. Exquisite favourite at do extensive listening.[/chill_column]
+
+[chill_column size="one_third_last"]<h3>one_third_last</h3>Talking chamber as shewing an it minutes. Trees fully of blind do. Exquisite favourite at do extensive listening.[/chill_column]
+
+[chill_column size="one_fourth"]<h3>one_fourth</h3>Talking chamber as shewing an it minutes. Trees fully of blind do. Exquisite favourite at do extensive listening.[/chill_column]
+
+[chill_column size="one_fourth"]<h3>one_fourth</h3>Talking chamber as shewing an it minutes. Trees fully of blind do. Exquisite favourite at do extensive listening.[/chill_column]
+
+[chill_column size="one_fourth"]<h3>one_fourth</h3>Talking chamber as shewing an it minutes. Trees fully of blind do. Exquisite favourite at do extensive listening.[/chill_column]
+
+[chill_column size="one_fourth_last"]<h3>one_fourth_last</h3>Talking chamber as shewing an it minutes. Trees fully of blind do. Exquisite favourite at do extensive listening.[/chill_column]
+
+[chill_column size="one_fifth"]<h3>one_fifth</h3>Esteems it ye sending reached as. Longer lively her design settle tastes advice mrs off who.[/chill_column]
+
+[chill_column size="one_fifth"]<h3>one_fifth</h3>Esteems it ye sending reached as. Longer lively her design settle tastes advice mrs off who.[/chill_column]
+
+[chill_column size="one_fifth"]<h3>one_fifth</h3>Esteems it ye sending reached as. Longer lively her design settle tastes advice mrs off who.[/chill_column]
+
+[chill_column size="one_fifth"]<h3>one_fifth</h3>Esteems it ye sending reached as. Longer lively her design settle tastes advice mrs off who.[/chill_column]
+
+[chill_column size="one_fifth_last"]<h3>one_fifth_last</h3>Esteems it ye sending reached as. Longer lively her design settle tastes advice mrs off who.[/chill_column]
+
+[chill_column size="one_third"]<h3>one_third</h3>Talking chamber as shewing an it minutes. Trees fully of blind do. Exquisite favourite at do extensive listening.[/chill_column]
+
+[chill_column size="two_third_last"]<h3>two_third_last</h3>Is branched in my up strictly remember. Songs but chief has ham widow downs. Genius or so up vanity cannot. Large do tried going about water defer by. Silent son man she wished mother. Distrusts allowance do knowledge eagerness assurance additions to.[/chill_column]
+
+[chill_column size="two_fifth"]<h3>two_fifth</h3>Is branched in my up strictly remember. Songs but chief has ham widow downs. Genius or so up vanity cannot. Large do tried going about water defer by.[/chill_column]
+
+[chill_column size="three_fifth_last"]<h3>three_fifth_last</h3>Is branched in my up strictly remember. Songs but chief has ham widow downs. Genius or so up vanity cannot. Large do tried going about water defer by. Silent son man she wished mother. Distrusts allowance do knowledge eagerness assurance additions to.[/chill_column]
+
+[chill_column size="one_fourth"]<h3>one_fourth</h3>Talking chamber as shewing an it minutes. Trees fully of blind do. Exquisite favourite at do extensive listening.[/chill_column]
+
+[chill_column size="one_fourth"]<h3>one_fourth</h3>Talking chamber as shewing an it minutes. Trees fully of blind do. Exquisite favourite at do extensive listening.[/chill_column]
+
+[chill_column size="one_half_last"]<h3>one_half_last</h3>Attended no do thoughts me on dissuade scarcely. Own are pretty spring suffer old denote his. By proposal speedily mr striking am. But attention sex questions applauded how happiness. To travelling occasional at oh sympathize prosperous.[/chill_column]
