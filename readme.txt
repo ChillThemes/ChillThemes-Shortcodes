@@ -12,6 +12,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Enables custom shortcodes for use in any of our Chill Themes.
 
+You can see a demo of all the shortcodes this plugin adds below:
+
+* <a href="http://demos.chillthemes.com/luminaria/shortcodes">ChillThemes Shortcodes</a>
+
 == Installation ==
 
 1. Unzip and upload 'chillthemes-shortcodes' to the '/wp-content/plugins/' directory
