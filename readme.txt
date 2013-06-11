@@ -4,7 +4,7 @@ Donate link: http://chillthemes.com/donate
 Tags: chillthemes, shortcodes
 Requires at least: 3.0
 Tested up to: 3.6
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,12 @@ There's no need to prefix it with 'icon-', if you do, the icon won't display.
 If you look inside of the */css/font-awesome.css* file, at the very bottom you'll find some social icons you can also use.
 
 == Changelog ==
+
+= 1.2 =
+* Improved column styling and added the ability to display an icon and modify its background, color, padding, radius, and size.
+
+= 1.1 =
+* Added background: none; and border: 0; to the accordion to prevent styling issues.
 
 = 1.0 =
 * Fresh out of the oven, careful it's hot!

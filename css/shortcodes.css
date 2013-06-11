@@ -1,6 +1,8 @@
 /* Accordion
 -------------------------------------------------------------------------------------*/
 .chill-accordion {
+	background: none;
+	border: 0;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 0 0 20px;
 }
@@ -258,37 +260,33 @@
 
 /* Columns
 -------------------------------------------------------------------------------------*/
-.one_half,
-.one_third,
-.one_fourth,
-.one_fifth,
-.two_third,
-.two_fifth,
-.three_fourth,
-.three_fifth,
-.four_fifth,
-.five_sixth {
+.chill-column {
 	float: left;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin-bottom: 20px;
 	margin-right: 4%;
 }
 
-.one_half_last,
-.one_third_last,
-.one_fourth_last,
-.one_fifth_last,
-.two_third_last,
-.two_fifth_last,
-.three_fourth_last,
-.three_fifth_last,
-.four_fifth_last,
-.five_sixth_last {
+.chill-column-last {
 	clear: right;
 	float: left;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin-bottom: 20px;
 	margin-right: 0;
+}
+
+.chill-column [class^="icon-"],
+.chill-column [class*="icon-"] {
+	background-color: #333;
+	color: #FFF;
+	float: left;
+	line-height: normal;
+	margin: 6px 20px 0 0;
+}
+
+.chill-column .column-content {
+	display: block;
+	overflow: hidden;
 }
 
 .one_half, .one_half_last { width: 48%; }
