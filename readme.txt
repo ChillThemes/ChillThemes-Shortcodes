@@ -39,6 +39,7 @@ If you look inside of the */css/font-awesome.css* file, at the very bottom you'l
 = 1.2 =
 * Improved column styling and added the ability to display an icon and modify its background, color, padding, radius, and size.
 
+
 = 1.1 =
 * Added background: none; and border: 0; to the accordion to prevent styling issues.
 
