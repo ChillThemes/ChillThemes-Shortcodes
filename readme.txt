@@ -4,7 +4,11 @@ Donate link: http://chillthemes.com/donate
 Tags: chillthemes, shortcodes
 Requires at least: 3.0
 Tested up to: 3.6
+<<<<<<< HEAD
 Stable tag: 1.3
+=======
+Stable tag: 1.2
+>>>>>>> eec9075449e28fb8213fe064328054222f2870aa
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
