@@ -61,6 +61,24 @@
 	padding: 20px;
 }
 
+.chill-accordion .ui-accordion-content ul {
+	margin: 0;
+}
+
+.chill-accordion .ui-accordion-content li {
+	background: none;
+	border-bottom: 1px solid #EEE;
+	list-style: none;
+	margin: 0 0 15px;
+	padding: 0 0 15px;
+}
+
+.chill-accordion .ui-accordion-content li:last-child {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
 /* Alerts
 -------------------------------------------------------------------------------------*/
 
