@@ -4,7 +4,7 @@
 Plugin Name: ChillThemes Shortcodes
 Plugin URI: https://github.com/chillthemes/chillthemes-shortcodes
 Description: Provides custom shortcodes for use in any of our Chill Themes.
-Version: 1.0
+Version: 1.2
 Author: ChillThemes
 Author URI: http://chillthemes.com
 Author Email: matt@chillthemes.com
@@ -40,9 +40,9 @@ add_action( 'wp_enqueue_scripts', 'chillthemes_shortcodes_styles' );
 
 function chillthemes_shortcodes_scripts() {
 	wp_enqueue_script( 'jquery' );
-	wp_register_script( 'chillthemes-accordion', plugins_url( 'js/accordion.js', __FILE__ ), array( 'jquery', 'jquery-ui-accordion' ), false, null );
-	wp_register_script( 'chillthemes-tabs', plugins_url( 'js/tabs.js', __FILE__ ), array( 'jquery', 'jquery-ui-tabs' ), false, null );
-	wp_register_script( 'chillthemes-toggle', plugins_url( 'js/toggle.js', __FILE__ ), array( 'jquery' ), false, null );
+	wp_register_script( 'chillthemes-shortcodes-accordion', plugins_url( 'js/accordion.js', __FILE__ ), array( 'jquery', 'jquery-ui-accordion' ), false, null );
+	wp_register_script( 'chillthemes-shortcodes-tabs', plugins_url( 'js/tabs.js', __FILE__ ), array( 'jquery', 'jquery-ui-tabs' ), false, null );
+	wp_register_script( 'chillthemes-shortcodes-toggle', plugins_url( 'js/toggle.js', __FILE__ ), array( 'jquery' ), false, null );
 }
 add_action( 'wp_enqueue_scripts', 'chillthemes_shortcodes_scripts' );
 

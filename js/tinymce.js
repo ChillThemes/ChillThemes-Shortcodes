@@ -63,6 +63,13 @@
 
 					b.addSeparator();
 
+					/* Media */
+					c = b.addMenu({ title: 'Media' });
+					a.render( c, 'YouTube', 'youtube' );
+					a.render( c, 'Vimeo', 'vimeo' );
+
+					b.addSeparator();
+
 					/* Miscellaneous */
 					c = b.addMenu({ title: 'Miscellaneous' });
 					a.render( c, 'Emphasis', 'emphasis' );
@@ -79,14 +86,6 @@
 			ed.add({
 				title: title,
 				onclick: function () {
-					
-					/*--------------------------------------------*
-					 * Accordion
-					 *--------------------------------------------*/
-
-					if ( id == 'accordion' ) {
-						tinyMCE.activeEditor.selection.setContent( '[chill_accordion]<br />[chill_accordion_section icon="ok" title="Section One"]<br />Section One Content<br />[/chill_accordion_section]<br />[chill_accordion_section icon="remove" title="Section Two"]<br />Section Two Content<br />[/chill_accordion_section]<br />[/chill_accordion]' );
-					}
 
 					/*--------------------------------------------*
 					 * Alerts
@@ -153,31 +152,31 @@
 					 *--------------------------------------------*/
 
 					if ( id == 'one_half' ) {
-						tinyMCE.activeEditor.selection.setContent( '[chill_column size="one_half"]<h3>one_half</h3>Is branched in my up strictly remember. Songs but chief has ham widow downs. Genius or so up vanity cannot. Large do tried going about water defer by. Silent son man she wished mother.[/chill_column]' );
+						tinyMCE.activeEditor.selection.setContent( '[chill_column size="one_half" icon="star" icon_background="333" icon_color="FFF" icon_padding="15" icon_radius="50" icon_size="15"]<h3>one_half</h3>Is branched in my up strictly remember. Songs but chief has ham widow downs. Genius or so up vanity cannot. Large do tried going about water defer by. Silent son man she wished mother.[/chill_column]' );
 					}
 
 					if ( id == 'one_half_last' ) {
-						tinyMCE.activeEditor.selection.setContent( '[chill_column size="one_half_last"]<h3>one_half_last</h3>Attended no do thoughts me on dissuade scarcely. Own are pretty spring suffer old denote his. By proposal speedily mr striking am. But attention sex questions applauded how happiness. To travelling occasional at oh sympathize prosperous.[/chill_column]' );
+						tinyMCE.activeEditor.selection.setContent( '[chill_column size="one_half_last" icon="heart" icon_background="333" icon_color="FFF" icon_padding="15" icon_radius="0" icon_size="15"]<h3>one_half_last</h3>Attended no do thoughts me on dissuade scarcely. Own are pretty spring suffer old denote his. By proposal speedily mr striking am. But attention sex questions applauded how happiness. To travelling occasional at oh sympathize prosperous.[/chill_column]' );
 					}
 
 					if ( id == 'one_third' ) {
-						tinyMCE.activeEditor.selection.setContent( '[chill_column size="one_third"]<h3>one_third</h3>Talking chamber as shewing an it minutes. Trees fully of blind do. Exquisite favourite at do extensive listening.[/chill_column]' );
+						tinyMCE.activeEditor.selection.setContent( '[chill_column size="one_third" icon="" icon_background="333" icon_color="FFF" icon_padding="15" icon_radius="50" icon_size="15"]<h3>one_third</h3>Talking chamber as shewing an it minutes. Trees fully of blind do. Exquisite favourite at do extensive listening.[/chill_column]' );
 					}
 
 					if ( id == 'one_third_last' ) {
-						tinyMCE.activeEditor.selection.setContent( '[chill_column size="one_third_last"]<h3>one_third_last</h3>Talking chamber as shewing an it minutes. Trees fully of blind do. Exquisite favourite at do extensive listening.[/chill_column]' );
+						tinyMCE.activeEditor.selection.setContent( '[chill_column size="one_third_last" icon="" icon_background="333" icon_color="FFF" icon_padding="15" icon_radius="50" icon_size="15"]<h3>one_third_last</h3>Talking chamber as shewing an it minutes. Trees fully of blind do. Exquisite favourite at do extensive listening.[/chill_column]' );
 					}
 
 					if ( id == 'one_fourth' ) {
-						tinyMCE.activeEditor.selection.setContent( '[chill_column size="one_fourth"]<h3>one_fourth</h3>Talking chamber as shewing an it minutes. Trees fully of blind do. Exquisite favourite at do extensive listening.[/chill_column]' );
+						tinyMCE.activeEditor.selection.setContent( '[chill_column size="one_fourth" icon="" icon_background="333" icon_color="FFF" icon_padding="15" icon_radius="50" icon_size="15"]<h3>one_fourth</h3>Talking chamber as shewing an it minutes. Trees fully of blind do. Exquisite favourite at do extensive listening.[/chill_column]' );
 					}
 
 					if ( id == 'one_fourth_last' ) {
-						tinyMCE.activeEditor.selection.setContent( '[chill_column size="one_fourth_last"]<h3>one_fourth_last</h3>Talking chamber as shewing an it minutes. Trees fully of blind do. Exquisite favourite at do extensive listening.[/chill_column]' );
+						tinyMCE.activeEditor.selection.setContent( '[chill_column size="one_fourth_last" icon="" icon_background="333" icon_color="FFF" icon_padding="15" icon_radius="50" icon_size="15"]<h3>one_fourth_last</h3>Talking chamber as shewing an it minutes. Trees fully of blind do. Exquisite favourite at do extensive listening.[/chill_column]' );
 					}
 
 					if ( id == 'one_fifth' ) {
-						tinyMCE.activeEditor.selection.setContent( '[chill_column size="one_fifth"]<h3>one_fourth</h3>Esteems it ye sending reached as. Longer lively her design settle tastes advice mrs off who.[/chill_column]' );
+						tinyMCE.activeEditor.selection.setContent( '[chill_column size="one_fifth" icon="" icon_background="333" icon_color="FFF" icon_padding="15" icon_radius="50" icon_size="15"]<h3>one_fourth</h3>Esteems it ye sending reached as. Longer lively her design settle tastes advice mrs off who.[/chill_column]' );
 					}
 
 					if ( id == 'one_fifth_last' ) {
@@ -185,43 +184,59 @@
 					}
 
 					if ( id == 'two_third' ) {
-						tinyMCE.activeEditor.selection.setContent( '[chill_column size="two_third"]<h3>one_fourth</h3>Is branched in my up strictly remember. Songs but chief has ham widow downs. Genius or so up vanity cannot. Large do tried going about water defer by. Silent son man she wished mother. Distrusts allowance do knowledge eagerness assurance additions to.[/chill_column]' );
+						tinyMCE.activeEditor.selection.setContent( '[chill_column size="two_third" icon="" icon_background="333" icon_color="FFF" icon_padding="15" icon_radius="50" icon_size="15"]<h3>one_fourth</h3>Is branched in my up strictly remember. Songs but chief has ham widow downs. Genius or so up vanity cannot. Large do tried going about water defer by. Silent son man she wished mother. Distrusts allowance do knowledge eagerness assurance additions to.[/chill_column]' );
 					}
 
 					if ( id == 'two_third_last' ) {
-						tinyMCE.activeEditor.selection.setContent( '[chill_column size="two_third_last"]<h3>one_fourth_last</h3>Is branched in my up strictly remember. Songs but chief has ham widow downs. Genius or so up vanity cannot. Large do tried going about water defer by. Silent son man she wished mother. Distrusts allowance do knowledge eagerness assurance additions to.[/chill_column]' );
+						tinyMCE.activeEditor.selection.setContent( '[chill_column size="two_third_last" icon="" icon_background="333" icon_color="FFF" icon_padding="15" icon_radius="50" icon_size="15"]<h3>one_fourth_last</h3>Is branched in my up strictly remember. Songs but chief has ham widow downs. Genius or so up vanity cannot. Large do tried going about water defer by. Silent son man she wished mother. Distrusts allowance do knowledge eagerness assurance additions to.[/chill_column]' );
 					}
 
 					if ( id == 'two_fifth' ) {
-						tinyMCE.activeEditor.selection.setContent( '[chill_column size="two_fifth"]<h3>two_fifth</h3>Is branched in my up strictly remember. Songs but chief has ham widow downs. Genius or so up vanity cannot. Large do tried going about water defer by.[/chill_column]' );
+						tinyMCE.activeEditor.selection.setContent( '[chill_column size="two_fifth" icon="" icon_background="333" icon_color="FFF" icon_padding="15" icon_radius="50" icon_size="15"]<h3>two_fifth</h3>Is branched in my up strictly remember. Songs but chief has ham widow downs. Genius or so up vanity cannot. Large do tried going about water defer by.[/chill_column]' );
 					}
 
 					if ( id == 'two_fifth_last' ) {
-						tinyMCE.activeEditor.selection.setContent( '[chill_column size="two_fifth"]<h3>two_fifth</h3>Is branched in my up strictly remember. Songs but chief has ham widow downs. Genius or so up vanity cannot. Large do tried going about water defer by.[/chill_column]' );
+						tinyMCE.activeEditor.selection.setContent( '[chill_column size="two_fifth" icon="" icon_background="333" icon_color="FFF" icon_padding="15" icon_radius="50" icon_size="15"]<h3>two_fifth</h3>Is branched in my up strictly remember. Songs but chief has ham widow downs. Genius or so up vanity cannot. Large do tried going about water defer by.[/chill_column]' );
 					}
 
 					if ( id == 'three_fifth' ) {
-						tinyMCE.activeEditor.selection.setContent( '[chill_column size="three_fifth"]<h3>three_fifth</h3>Is branched in my up strictly remember. Songs but chief has ham widow downs. Genius or so up vanity cannot. Large do tried going about water defer by. Silent son man she wished mother. Distrusts allowance do knowledge eagerness assurance additions to.[/chill_column]' );
+						tinyMCE.activeEditor.selection.setContent( '[chill_column size="three_fifth" icon="" icon_background="333" icon_color="FFF" icon_padding="15" icon_radius="50" icon_size="15"]<h3>three_fifth</h3>Is branched in my up strictly remember. Songs but chief has ham widow downs. Genius or so up vanity cannot. Large do tried going about water defer by. Silent son man she wished mother. Distrusts allowance do knowledge eagerness assurance additions to.[/chill_column]' );
 					}
 
 					if ( id == 'three_fifth_last' ) {
-						tinyMCE.activeEditor.selection.setContent( '[chill_column size="three_fifth_last"]<h3>three_fifth_last</h3>Is branched in my up strictly remember. Songs but chief has ham widow downs. Genius or so up vanity cannot. Large do tried going about water defer by. Silent son man she wished mother. Distrusts allowance do knowledge eagerness assurance additions to.[/chill_column]' );
+						tinyMCE.activeEditor.selection.setContent( '[chill_column size="three_fifth_last" icon="" icon_background="333" icon_color="FFF" icon_padding="15" icon_radius="50" icon_size="15"]<h3>three_fifth_last</h3>Is branched in my up strictly remember. Songs but chief has ham widow downs. Genius or so up vanity cannot. Large do tried going about water defer by. Silent son man she wished mother. Distrusts allowance do knowledge eagerness assurance additions to.[/chill_column]' );
 					}
 
 					/*--------------------------------------------*
-					 * Emphasis
+					 * jQuery
+					 *--------------------------------------------*/
+
+					if ( id == 'accordion' ) {
+						tinyMCE.activeEditor.selection.setContent( '[chill_accordion]<br />[chill_accordion_section icon="ok" title="Section One"]<br />Section One Content<br />[/chill_accordion_section]<br />[chill_accordion_section icon="remove" title="Section Two"]<br />Section Two Content<br />[/chill_accordion_section]<br />[/chill_accordion]' );
+					}
+
+					if ( id == 'tabs' ) {
+						tinyMCE.activeEditor.selection.setContent( '[chill_tabs]<br />[chill_tab title="Tab One"]<br />Tab Content One<br />[/chill_tab]<br />[chill_tab title="Tab Two"]<br />Tab Content Two<br />[/chill_tab]<br />[/chill_tabs]' );
+					}
+
+					/*--------------------------------------------*
+					 * Media
+					 *--------------------------------------------*/
+
+					if ( id == 'youtube' ) {
+						tinyMCE.activeEditor.selection.setContent( '[chill_youtube id="8hirl22IWw8" width="800" height="400"]' );
+					}
+
+					if ( id == 'vimeo' ) {
+						tinyMCE.activeEditor.selection.setContent( '[chill_vimeo id="36092192" width="800" height="400"]' );
+					}
+
+					/*--------------------------------------------*
+					 * Miscellaneous
 					 *--------------------------------------------*/
 
 					if ( id == 'emphasis' ) {
 						tinyMCE.activeEditor.selection.setContent( '[chill_emphasis color="B94A48" style="normal" weight="400"]Text[/chill_emphasis]' );
-					}
-
-					/*--------------------------------------------*
-					 * Tabs
-					 *--------------------------------------------*/
-
-					if ( id == 'tabs' ) {
-						tinyMCE.activeEditor.selection.setContent( '[chill_tabs]<br />[chill_tab title="Tab One"]<br />Tab Content One<br />[/chill_tab]<br />[chill_tab title="Tab Two"]<br />Tab Content Two<br />[/chill_tab]<br />[/chill_tabs]' );
 					}
 
 					return false;

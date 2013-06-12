@@ -21,7 +21,7 @@ function chillthemes_shortcode_accordion( $atts, $content = '' ) {
 	extract( shortcode_atts( array(), $atts ) );
 
 	wp_enqueue_script( 'jquery-ui-accordion' );
-	wp_enqueue_script( 'chillthemes-accordion' );
+	wp_enqueue_script( 'chillthemes-shortcodes-accordion' );
 
 	return '<div class="chill-accordion">' . do_shortcode( $content ) . '</div>';
 }
@@ -37,7 +37,7 @@ function chillthemes_shortcode_accordion_section( $atts, $content = '' ) {
 		$atts
 	));
 
-	$icon = ( $icon ) ? '<i class="icon-' . $icon . '"></i> ' : '';
+	$icon = ($icon) ? '<i class="icon-' . $icon . '"></i> ' : '';
 
 	return '<h3 class="chill-accordion-trigger">' . $icon . esc_html( $title ) . '</h3><div>' . do_shortcode( $content ) . '</div>';
 }
@@ -58,10 +58,10 @@ function chillthemes_shortcode_alert( $atts, $content = '' ) {
 	));
 
 	$style = '';
-	if ( $border_radius ) { $style .= 'border-radius: ' . $border_radius . 'px;'; }
-	$icon = ( $icon ) ? '<i class="icon-' . $icon . ' ' . $icon_float . '"></i> ' : '';
-	if ( $margin_bottom ) { $style .= 'margin-bottom: ' . $margin_bottom . 'px;'; }
-	if ( $margin_top ) { $style .= 'margin-top: ' . $margin_top . 'px;'; }
+	if ($border_radius) { $style .= 'border-radius: ' . $border_radius . 'px;'; }
+	$icon = ($icon) ? '<i class="icon-' . $icon . ' ' . $icon_float . '"></i> ' : '';
+	if ($margin_bottom) { $style .= 'margin-bottom: ' . $margin_bottom . 'px;'; }
+	if ($margin_top) { $style .= 'margin-top: ' . $margin_top . 'px;'; }
 
 	$out = '';
 	$out .= '<div class="chill-alert chill-alert-' . esc_attr( $type ) . '" style="' . esc_attr( $style ) . '">';
@@ -93,13 +93,13 @@ function chillthemes_shortcode_button( $atts, $content = '' ) {
 	));
 
 	$style = '';
-	if ( $border_radius ) { $style .= 'border-radius: ' . $border_radius . 'px;'; }
-	if ( $box_shadow ) { $style .= 'box-shadow: 0 0 ' . $box_shadow . 'px rgba(0,0,0,0.5);'; }
-	$icon = ( $icon ) ? '<i class="icon-' . $icon . '"></i> ' : '';
-	if ( $margin_bottom ) { $style .= 'margin-bottom: ' . $margin_bottom . 'px;'; }
-	if ( $margin_left ) { $style .= 'margin-left: ' . $margin_left . 'px;'; }
-	if ( $margin_right ) { $style .= 'margin-right: ' . $margin_right . 'px;'; }
-	if ( $margin_top ) { $style .= 'margin-top: ' . $margin_top . 'px;'; }
+	if ($border_radius) { $style .= 'border-radius: ' . $border_radius . 'px;'; }
+	if ($box_shadow) { $style .= 'box-shadow: 0 0 ' . $box_shadow . 'px rgba(0,0,0,0.5);'; }
+	$icon = ($icon) ? '<i class="icon-' . $icon . '"></i> ' : '';
+	if ($margin_bottom) { $style .= 'margin-bottom: ' . $margin_bottom . 'px;'; }
+	if ($margin_left) { $style .= 'margin-left: ' . $margin_left . 'px;'; }
+	if ($margin_right) { $style .= 'margin-right: ' . $margin_right . 'px;'; }
+	if ($margin_top) { $style .= 'margin-top: ' . $margin_top . 'px;'; }
 
 	$out = '';
 	$out .= '<a class="chill-button ' . esc_attr( $color ) . '" href="' . esc_url( $url ) . '" target="_' . esc_attr( $target ) . '" title="' . esc_attr( $title ) . '" style="' . esc_attr( $style ) . '">';
@@ -115,17 +115,24 @@ add_shortcode( 'chill_button', 'chillthemes_shortcode_button' );
 function chillthemes_shortcode_columns( $atts, $content = '' ) {
 	extract( shortcode_atts(
 		array(
+			'icon' => '',
+			'icon_background' => '333',
+			'icon_color' => 'FFF',
+			'icon_padding' => '15',
+			'icon_radius' => '50',
+			'icon_size' => '15',
 			'size' => ''
 		),
 		$atts
 	));
 
+	$icon = ($icon) ? '<i class="icon-' . esc_attr( $icon ) . '" style="background: #' . esc_attr( $icon_background ) . '; border-radius: ' . esc_attr( $icon_radius ) . 'px; color: #' . esc_attr( $icon_color ) . '; font-size: ' . esc_attr( $icon_size ) . 'px; padding: ' . esc_attr( $icon_padding ) . 'px;"></i> ' : '';
 	$size = ($size) ? '' . $size : '';
 
 	if ( strpos( $size, 'last' ) === false ) {
-		return '<div class="' . esc_attr( $size ) . '"><span class="box-content">' . do_shortcode( $content ) . '</span></div>';
+		return '<div class="chill-column ' . esc_attr( $size ) . '">' . $icon . '<span class="column-content">' . do_shortcode( $content ) . '</span></div>';
 	} else {
-		return '<div class="' . esc_attr( $size ) . '"><span class="box-content">' . do_shortcode( $content ) . '</span></div><div style="clear: both;"></div>';
+		return '<div class="chill-column chill-column-last ' . esc_attr( $size ) . '">' . $icon . '<span class="column-content">' . do_shortcode( $content ) . '</span></div><div style="clear: both;"></div>';
 	}
 }
 add_shortcode( 'chill_column', 'chillthemes_shortcode_columns' );
@@ -150,9 +157,9 @@ function chillthemes_shortcode_emphasis( $atts, $content = '' ) {
 add_shortcode( 'chill_emphasis', 'chillthemes_shortcode_emphasis' );
 
 /* Shortcode to display a set of tabs. */
-function chillthemes_shortcode_tabs( $atts, $content = null ) {
+function chillthemes_shortcode_tabs( $atts, $content = '' ) {
 	wp_enqueue_script( 'jquery-ui-tabs' );
-	wp_enqueue_script( 'chillthemes-tabs' );
+	wp_enqueue_script( 'chillthemes-shortcodes-tabs' );
 
 	$defaults = array();
 	extract( shortcode_atts( $defaults, $atts ) );
@@ -160,6 +167,7 @@ function chillthemes_shortcode_tabs( $atts, $content = null ) {
 	$tab_titles = array();
 	if ( isset( $matches[1] ) ) { $tab_titles = $matches[1]; }
 	$output = '';
+
 	if ( count( $tab_titles ) ) {
 		$output .= '<div id="chill-' . rand( 1, 100 ) . '" class="chill-tabs">';
 			$output .= '<ul class="ui-tabs-nav">';
@@ -187,5 +195,33 @@ function chillthemes_shortcode_tab( $atts, $content = '' ) {
 	return '<div id="chill-' . sanitize_title( $title ) . '" class="tab-content">' . do_shortcode( $content ) . '</div>';
 }
 add_shortcode( 'chill_tab', 'chillthemes_shortcode_tab' );
+
+/* Shortcode to embed a Vimeo video. */
+function chillthemes_shortcode_vimeo( $atts ) {
+	$atts = shortcode_atts(
+		array(
+			'id' => '',
+			'width' => '',
+			'height' => ''
+		),
+		$atts
+	);
+	return '<p class="chillthemes-video"><iframe width="' . esc_attr( $atts['width'] ) . '" height="' . esc_attr( $atts['height'] ) . '" src="http://player.vimeo.com/video/' . esc_attr( $atts['id'] ) . '" frameborder="0" allowfullscreen></iframe></p>';
+}
+add_shortcode( 'chill_vimeo', 'chillthemes_shortcode_vimeo' );
+
+/* Shortcode to embed a YouTube video. */
+function chillthemes_shortcode_youtube( $atts ) {
+	$atts = shortcode_atts(
+		array(
+			'id' => '',
+			'width' => '',
+			'height' => ''
+		),
+		$atts
+	);
+	return '<p class="chillthemes-video"><iframe width="' . esc_attr( $atts['width'] ) . '" height="' . esc_attr( $atts['height'] ) . '" src="http://www.youtube.com/embed/' . esc_attr( $atts['id'] ) . '" frameborder="0" allowfullscreen></iframe></p>';
+}
+add_shortcode( 'chill_youtube', 'chillthemes_shortcode_youtube' );
 
 ?>
