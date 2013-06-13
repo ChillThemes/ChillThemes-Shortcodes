@@ -56,9 +56,13 @@ Tab Content Two
 
 <h2>YouTube &amp; Vimeo</h2>
 
+[chill_column size="one_half"]
 [chill_youtube id="8hirl22IWw8"]
+[/chill_column]
 
+[chill_column size="one_half_last"]
 [chill_vimeo id="36092192"]
+[/chill_column]
 
 <h2>Columns</h2>
 
