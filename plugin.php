@@ -4,7 +4,7 @@
 Plugin Name: ChillThemes Shortcodes
 Plugin URI: https://github.com/chillthemes/chillthemes-shortcodes
 Description: Provides custom shortcodes for use in any of our Chill Themes.
-Version: 1.2
+Version: 1.4
 Author: ChillThemes
 Author URI: http://chillthemes.com
 Author Email: matt@chillthemes.com
