@@ -1,8 +1,10 @@
 /* Accordion
 -------------------------------------------------------------------------------------*/
 .chill-accordion {
+	background: none;
+	border: 0;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	margin: 0 0 20px;
+	margin: 0 0 25px;
 }
 
 .chill-accordion [class^="icon-"],
@@ -25,7 +27,7 @@
 	font-size: 16px;
 	font-weight: 400;
 	line-height: normal;
-	margin: 15px 0 0;
+	margin: -1px 0 0;
 	outline: 0;
 	padding: 22px 15px;
 	text-transform: none;
@@ -56,7 +58,26 @@
 	background-color: #FFF;
 	border: 1px solid #EEE;
 	border-top: 0;
+	margin: 0 0 -1px;
 	padding: 20px;
+}
+
+.chill-accordion .ui-accordion-content ul {
+	margin: 0;
+}
+
+.chill-accordion .ui-accordion-content li {
+	background: none;
+	border-bottom: 1px solid #EEE;
+	list-style: none;
+	margin: 0 0 15px;
+	padding: 0 0 15px;
+}
+
+.chill-accordion .ui-accordion-content li:last-child {
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
 
 /* Alerts
@@ -151,17 +172,13 @@
 	display: inline-table;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 12px;
-	padding: 13px 12px 12px;
+	padding: 13px 14px;
 	font-size: 12px;
 	color: #FFF;
 	cursor: pointer;
 	font-weight: 600;
 	text-decoration: none;
 	text-transform: uppercase;
-	transition: background-color 0.3s linear;
-		-moz-transition: background-color 0.3s linear;
-		-o-transition: background-color 0.3s linear;
-		-webkit-transition: background-color 0.3s linear;
 }
 
 .chill-button [class^="icon-"],
@@ -172,118 +189,281 @@
 
 /* Black */
 .chill-button.black {
-	background-color: #444;
+	background-color: #2D2D2D;
+	background-image: -o-linear-gradient(90deg, rgb(53,53,53) 0%, rgb(67,67,67) 100%);
+	background-image: -moz-linear-gradient(90deg, rgb(53,53,53) 0%, rgb(67,67,67) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(53,53,53) 0%, rgb(67,67,67) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(53,53,53) 0%, rgb(67,67,67) 100%);
+	background-image: linear-gradient(90deg, rgb(53,53,53) 0%, rgb(67,67,67) 100%);
+	border: 1px solid #000;
+	box-shadow: inset 0 0 1px rgba(0,0,0,1);
+	color: #FDFFFD;
+	text-shadow: rgba(0,0,0,1) 0 1px;
 }
 
 .chill-button.black:hover {
-	background-color: #666;
+	background-color: #4C4C4C;
+	background-image: -o-linear-gradient(90deg, rgb(63,63,63) 0%, rgb(79,79,79) 100%);
+	background-image: -moz-linear-gradient(90deg, rgb(63,63,63) 0%, rgb(79,79,79) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(63,63,63) 0%, rgb(79,79,79) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(63,63,63) 0%, rgb(79,79,79) 100%);
+	background-image: linear-gradient(90deg, rgb(63,63,63) 0%, rgb(79,79,79) 100%);
+}
+
+.chill-button.black:active {
+	background-color: #272727;
+	background-image: -o-linear-gradient(90deg, rgb(67,67,67) 0%, rgb(53,53,53) 100%);
+	background-image: -moz-linear-gradient(90deg, rgb(67,67,67) 0%, rgb(53,53,53) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(67,67,67) 0%, rgb(53,53,53) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(67,67,67) 0%, rgb(53,53,53) 100%);
+	background-image: linear-gradient(90deg, rgb(67,67,67) 0%, rgb(53,53,53) 100%);
+	box-shadow: inset 0 0 5px rgba(0,0,0,1);
 }
 
 /* Blue */
 .chill-button.blue {
-	background-color: #67AEE6;
+	background-color: #5489D0;
+	background-image: -o-linear-gradient(90deg, rgb(52,125,192) 0%, rgb(156,196,241) 100%);
+	background-image: -moz-linear-gradient(90deg, rgb(52,125,192) 0%, rgb(156,196,241) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(52,125,192) 0%, rgb(156,196,241) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(52,125,192) 0%, rgb(156,196,241) 100%);
+	background-image: linear-gradient(90deg, rgb(52,125,192) 0%, rgb(156,196,241) 100%);
+	border: 1px solid #3E6491;
+	box-shadow: inset 0 0 1px rgba(79,122,162,1);
+	color: #1E4F92;
+	text-shadow: rgba(254,252,252,0.5) 0 1px;
 }
 
 .chill-button.blue:hover {
-    background-color: #80C1F9;
+	background-color: #86B1EC;
+	background-image: -o-linear-gradient(90deg, rgb(89,149,206) 0%, rgb(183,210,241) 100%);
+	background-image: -moz-linear-gradient(90deg, rgb(89,149,206) 0%, rgb(183,210,241) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(89,149,206) 0%, rgb(183,210,241) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(89,149,206) 0%, rgb(183,210,241) 100%);
+	background-image: linear-gradient(90deg, rgb(89,149,206) 0%, rgb(183,210,241) 100%);
 }
 
-/* Brown */
-.chill-button.brown {
-    background-color: #7C584B;
-}
-
-.chill-button.brown:hover {
-    background-color: #A58376;
+.chill-button.blue:active {
+	background-color: #2964B4;
+	background-image: -o-linear-gradient(90deg, rgb(156,196,241) 0%, rgb(52,125,192) 100%);
+	background-image: -moz-linear-gradient(90deg, rgb(156,196,241) 0%, rgb(52,125,192) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(156,196,241) 0%, rgb(52,125,192) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(156,196,241) 0%, rgb(52,125,192) 100%);
+	background-image: linear-gradient(90deg, rgb(156,196,241) 0%, rgb(52,125,192) 100%);
+	box-shadow: inset 0 0 5px rgba(79,122,162,1);
 }
 
 /* Green */
 .chill-button.green {
-	background-color: #E0F9BE;
-	color: #000;
+	background-color: #85DD7C;
+	background-image: -o-linear-gradient(90deg, rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: -moz-linear-gradient(90deg, rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: linear-gradient(90deg, rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	border: 1px solid #158D34;
+	box-shadow: inset 0 0 1px rgba(26,154,72,1);
+	color: #1D7819;
+	text-shadow: rgba(254,252,252,0.5) 0 1px;
 }
 
 .chill-button.green:hover {
-	background-color: #D1F2A5;
-	color: #000;
+	background-color: #A7ED9E;
+	background-image: -o-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+	background-image: linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
 }
 
-/* Pink */
-.chill-button.pink {
-    background-color: #F796B2;
+.chill-button.green:active {
+	background-color: #5DC34E;
+	background-image: -o-linear-gradient(90deg, rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	background-image: -moz-linear-gradient(90deg, rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	background-image: linear-gradient(90deg, rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	box-shadow: inset 0 0 5px rgba(26,154,72,1);
 }
 
-.chill-button.pink:hover {
-	background-color: #F682A3;
+/* Orange */
+.chill-button.orange {
+	background-color: #F39C45;
+	background-image: -o-linear-gradient(90deg, rgb(250,153,60) 0%, rgb(244,197,140) 100%);
+	background-image: -moz-linear-gradient(90deg, rgb(250,153,60) 0%, rgb(244,197,140) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(250,153,60) 0%, rgb(244,197,140) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(250,153,60) 0%, rgb(244,197,140) 100%);
+	background-image: linear-gradient(90deg, rgb(250,153,60) 0%, rgb(244,197,140) 100%);
+	border: 1px solid #A87017;
+	box-shadow: inset 0 0 1px rgba(184,129,39,1);
+	color: #A8580B;
+	text-shadow: rgba(254,252,252,0.5) 0 1px;
+}
+
+.chill-button.orange:hover {
+	background-color: #EAB26C;
+	background-image: -o-linear-gradient(90deg, rgb(248,169,91) 0%, rgb(244,210,170) 100%);
+	background-image: -moz-linear-gradient(90deg, rgb(248,169,91) 0%, rgb(244,210,170) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(248,169,91) 0%, rgb(244,210,170) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(248,169,91) 0%, rgb(244,210,170) 100%);
+	background-image: linear-gradient(90deg, rgb(248,169,91) 0%, rgb(244,210,170) 100%);
+}
+
+.chill-button.orange:active {
+	background-color: #E77E21;
+	background-image: -o-linear-gradient(90deg, rgb(244,197,140) 0%, rgb(250,153,60) 100%);
+	background-image: -moz-linear-gradient(90deg, rgb(244,197,140) 0%, rgb(250,153,60) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(244,197,140) 0%, rgb(250,153,60) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(244,197,140) 0%, rgb(250,153,60) 100%);
+	background-image: linear-gradient(90deg, rgb(244,197,140) 0%, rgb(250,153,60) 100%);
+	box-shadow: inset 0 0 5px rgba(184,129,39,1);
 }
 
 /* Purple */
 .chill-button.purple {
-    background-color: #A7B4EA;
+	background-color: #9173EC;	
+	background-image: -o-linear-gradient(90deg, rgb(137,115,232) 0%, rgb(188,173,242) 100%);
+	background-image: -moz-linear-gradient(90deg, rgb(137,115,232) 0%, rgb(188,173,242) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(137,115,232) 0%, rgb(188,173,242) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(137,115,232) 0%, rgb(188,173,242) 100%);
+	background-image: linear-gradient(90deg, rgb(137,115,232) 0%, rgb(188,173,242) 100%);
+	border: 1px solid #571DAC;
+	box-shadow: inset 0 0 1px rgba(124,87,191,1);
+	color: #571DAC;
+	text-shadow: rgba(254,252,252,0.5) 0 1px;
 }
 
 .chill-button.purple:hover {
-	background-color: #8A99DA;
+	background-color: #A88FEF;
+	background-image: -o-linear-gradient(90deg, rgb(154,135,235) 0%, rgb(199,188,242) 100%);
+	background-image: -moz-linear-gradient(90deg, rgb(154,135,235) 0%, rgb(199,188,242) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(154,135,235) 0%, rgb(199,188,242) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(154,135,235) 0%, rgb(199,188,242) 100%);
+	background-image: linear-gradient(90deg, rgb(154,135,235) 0%, rgb(199,188,242) 100%);
+	border: 1px solid #571DAC;
+}
+
+.chill-button.purple:active {
+	background-color: #7D50E3;
+	background-image: -o-linear-gradient(90deg, rgb(188,173,242) 0%, rgb(137,115,232) 100%);
+	background-image: -moz-linear-gradient(90deg, rgb(188,173,242) 0%, rgb(137,115,232) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(188,173,242) 0%, rgb(137,115,232) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(188,173,242) 0%, rgb(137,115,232) 100%);
+	background-image: linear-gradient(90deg, rgb(188,173,242) 0%, rgb(137,115,232) 100%);
+	box-shadow: inset 0 0 5px rgba(124,87,191,1);
 }
 
 /* Red */
 .chill-button.red {
-    background-color: #C3260D;
+	background-color: #D85257;
+	background-image: -o-linear-gradient(90deg, rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+	background-image: -moz-linear-gradient(90deg, rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+	background-image: linear-gradient(90deg, rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+	border: 1px solid #951119;
+	box-shadow: inset 0 0 1px rgba(167,32,35,1);
+	color: #A7000F;
+	text-shadow: rgba(254,252,252,0.5) 0 1px;
 }
 
 .chill-button.red:hover {
-	background-color: #E7482F;
+	background-color: #F07D81;
+	background-image: -o-linear-gradient(90deg , rgb(216,90,93) 0%, rgb(243,167,169) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(216,90,93) 0%, rgb(243,167,169) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(216,90,93) 0%, rgb(243,167,169) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(216,90,93) 0%, rgb(243,167,169) 100%);
+	background-image: linear-gradient(90deg , rgb(216,90,93) 0%, rgb(243,167,169) 100%);
+}
+
+.chill-button.red:active {
+	background-color: #C4262E;
+	background-image: -o-linear-gradient(90deg, rgb(243,146,147) 0%, rgb(208,69,72) 100%);
+	background-image: -moz-linear-gradient(90deg, rgb(243,146,147) 0%, rgb(208,69,72) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(243,146,147) 0%, rgb(208,69,72) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(243,146,147) 0%, rgb(208,69,72) 100%);
+	background-image: linear-gradient(90deg, rgb(243,146,147) 0%, rgb(208,69,72) 100%);
+	box-shadow: inset 0 0 5px rgba(167,32,35,1);
 }
 
 /* Yellow */
 .chill-button.yellow {
-    background-color: #FFFF98;
-    color: #000;
+	background-color: #EBE584;
+	background-image: -o-linear-gradient(90deg, rgb(233,220,126) 0%, rgb(246,241,180) 100%);
+	background-image: -moz-linear-gradient(90deg, rgb(233,220,126) 0%, rgb(246,241,180) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(233,220,126) 0%, rgb(246,241,180) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(233,220,126) 0%, rgb(246,241,180) 100%);
+	background-image: linear-gradient(90deg, rgb(233,220,126) 0%, rgb(246,241,180) 100%);
+	border: 1px solid #A89917;
+	box-shadow: inset 0 0 1px rgba(184,166,43,1);
+	color: #A78E0F;
+	text-shadow: rgba(254,252,252,0.5) 0 1px;
 }
 
 .chill-button.yellow:hover {
-    background-color: #FFFF00;
-	color: #000;
+	background-color: #F1F09D;
+	background-image: -o-linear-gradient(90deg , rgb(237,227,150) 0%, rgb(246,242,199) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(237,227,150) 0%, rgb(246,242,199) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(237,227,150) 0%, rgb(246,242,199) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(237,227,150) 0%, rgb(246,242,199) 100%);
+	background-image: linear-gradient(90deg , rgb(237,227,150) 0%, rgb(246,242,199) 100%);
+	color: #A78E0F;
+}
+
+.chill-button.yellow:active {
+	background-color: #D4CC56;
+	background-image: -o-linear-gradient(90deg, rgb(246,241,180) 0%, rgb(233,220,126) 100%);
+	background-image: -moz-linear-gradient(90deg, rgb(246,241,180) 0%, rgb(233,220,126) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(246,241,180) 0%, rgb(233,220,126) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(246,241,180) 0%, rgb(233,220,126) 100%);
+	background-image: linear-gradient(90deg, rgb(246,241,180) 0%, rgb(233,220,126) 100%);
+	box-shadow: inset 0 0 5px rgba(184,166,43,1);
+	color: #A78E0F;
 }
 
 /* White */
 .chill-button.white {
-	color: #000;
+	background-color: #F3F3F3;
+	background-image: -o-linear-gradient(90deg, rgb(238,238,238) 0%, rgb(254,254,254) 100%);
+	background-image: -moz-linear-gradient(90deg, rgb(238,238,238) 0%, rgb(254,254,254) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(238,238,238) 0%, rgb(254,254,254) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(238,238,238) 0%, rgb(254,254,254) 100%);
+	background-image: linear-gradient(90deg, rgb(238,238,238) 0%, rgb(254,254,254) 100%);
+	border: 1px solid #ACACAC;
+	box-shadow: inset 0 0 1px rgba(187,187,187,1);
+	color: #2B2C2B;
+	text-shadow: rgba(254,254,254,0.5) 0 1px;
 }
 
 .chill-button.white:hover {
-	background-color: #FAFAFA;
-	color: #000;
+	background-color: #FFF;
+	background-image: -o-linear-gradient(90deg, rgb(246,246,246) 0%, rgb(254,254,254) 100%);
+	background-image: -moz-linear-gradient(90deg, rgb(246,246,246) 0%, rgb(254,254,254) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(246,246,246) 0%, rgb(254,254,254) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(246,246,246) 0%, rgb(254,254,254) 100%);
+	background-image: linear-gradient(90deg, rgb(246,246,246) 0%, rgb(254,254,254) 100%);
+}
+
+.chill-button.white:active {
+	background-color: #F9F9F9;
+	background-image: -o-linear-gradient(90deg, rgb(254,254,254) 0%, rgb(246,246,246) 100%);
+	background-image: -moz-linear-gradient(90deg, rgb(254,254,254) 0%, rgb(246,246,246) 100%);
+	background-image: -webkit-linear-gradient(90deg, rgb(254,254,254) 0%, rgb(246,246,246) 100%);
+	background-image: -ms-linear-gradient(90deg, rgb(254,254,254) 0%, rgb(246,246,246) 100%);
+	background-image: linear-gradient(90deg, rgb(254,254,254) 0%, rgb(246,246,246) 100%);
+	box-shadow: inset 0 0 5px rgba(187,187,187,1);
 }
 
 /* Columns
 -------------------------------------------------------------------------------------*/
-.one_half,
-.one_third,
-.one_fourth,
-.one_fifth,
-.two_third,
-.two_fifth,
-.three_fourth,
-.three_fifth,
-.four_fifth,
-.five_sixth {
+.chill-column {
 	float: left;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin-bottom: 20px;
 	margin-right: 4%;
 }
 
-.one_half_last,
-.one_third_last,
-.one_fourth_last,
-.one_fifth_last,
-.two_third_last,
-.two_fifth_last,
-.three_fourth_last,
-.three_fifth_last,
-.four_fifth_last,
-.five_sixth_last {
+.chill-column-last {
 	clear: right;
 	float: left;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -291,6 +471,31 @@
 	margin-right: 0;
 }
 
+.chill-column > [class^="icon-"],
+.chill-column > [class*="icon-"] {
+	background-color: #333;
+	color: #FFF;
+	float: left;
+	line-height: normal;
+	margin: 6px 20px 0 0;
+}
+
+.chill-column .column-content {
+	display: block;
+	overflow: hidden;
+}
+
+.chill-column .column-content h1,
+.chill-column .column-content h2,
+.chill-column .column-content h3,
+.chill-column .column-content h4,
+.chill-column .column-content h5,
+.chill-column .column-content h6 {
+	line-height: normal;
+	margin-top: 0;
+}
+
+.full { width: 100%; }
 .one_half, .one_half_last { width: 48%; }
 .one_third, .one_third_last { width: 30.66%; }
 .one_fourth, .one_fourth_last { width: 22%; }
@@ -306,6 +511,46 @@
 -------------------------------------------------------------------------------------*/
 .chill-emphasis {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Pricing
+-------------------------------------------------------------------------------------*/
+.chill-pricing {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.chill-pricing-holder {
+	padding: 35px 25px 30px;
+}
+
+.chill-pricing-plan {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 26px;
+	font-weight: 200;
+	line-height: normal;
+	margin: 0 0 25px;
+	padding: 0;
+}
+
+.chill-pricing-price {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: normal;
+	margin: 0 0 25px;
+	padding: 0;
+}
+
+.chill-pricing-content {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+.chill-pricing-content .chill-button {
+	margin: 30px 0 10px !important;
 }
 
 /* Tabs
