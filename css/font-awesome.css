@@ -25,22 +25,22 @@
 
 @font-face {
 	font-family: 'FontAwesome';
-	src: url('../fonts/font-awesome.eot');
-	src: url('../fonts/font-awesome.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/font-awesome.woff') format('woff'),
-		 url('../fonts/font-awesome.ttf') format('truetype'),
-		 url('../fonts/font-awesome.svg#FontAwesome') format('truetype');
+	src: url('../fonts/fontawesome-webfont.eot');
+	src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/fontawesome-webfont.woff') format('woff'),
+		 url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+		 url('../fonts/fontawesome-webfont.svg#FontAwesome') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'FontAwesomeSocial';
-	src: url('../fonts/font-awesome-social.eot');
-	src: url('../fonts/font-awesome-social.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/font-awesome-social.woff') format('woff'),
-		 url('../fonts/font-awesome-social.ttf') format('truetype'),
-		 url('../fonts/font-awesome-social.svg#FontAwesomeSocial') format('truetype');
+	src: url('../fonts/fontawesome-social-webfont.eot');
+	src: url('../fonts/fontawesome-social-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/fontawesome-social-webfont.woff') format('woff'),
+		 url('../fonts/fontawesome-social-webfont.ttf') format('truetype'),
+		 url('../fonts/fontawesome-social-webfont.svg#FontAwesomeSocial') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
