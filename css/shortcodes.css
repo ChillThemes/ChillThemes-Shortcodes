@@ -208,6 +208,7 @@
 	background-image: -webkit-linear-gradient(90deg, rgb(63,63,63) 0%, rgb(79,79,79) 100%);
 	background-image: -ms-linear-gradient(90deg, rgb(63,63,63) 0%, rgb(79,79,79) 100%);
 	background-image: linear-gradient(90deg, rgb(63,63,63) 0%, rgb(79,79,79) 100%);
+	color: #FDFFFD;
 }
 
 .chill-button.black:active {
@@ -218,6 +219,7 @@
 	background-image: -ms-linear-gradient(90deg, rgb(67,67,67) 0%, rgb(53,53,53) 100%);
 	background-image: linear-gradient(90deg, rgb(67,67,67) 0%, rgb(53,53,53) 100%);
 	box-shadow: inset 0 0 5px rgba(0,0,0,1);
+	color: #FDFFFD;
 }
 
 /* Blue */
@@ -241,6 +243,7 @@
 	background-image: -webkit-linear-gradient(90deg, rgb(89,149,206) 0%, rgb(183,210,241) 100%);
 	background-image: -ms-linear-gradient(90deg, rgb(89,149,206) 0%, rgb(183,210,241) 100%);
 	background-image: linear-gradient(90deg, rgb(89,149,206) 0%, rgb(183,210,241) 100%);
+	color: #1E4F92;
 }
 
 .chill-button.blue:active {
@@ -251,6 +254,7 @@
 	background-image: -ms-linear-gradient(90deg, rgb(156,196,241) 0%, rgb(52,125,192) 100%);
 	background-image: linear-gradient(90deg, rgb(156,196,241) 0%, rgb(52,125,192) 100%);
 	box-shadow: inset 0 0 5px rgba(79,122,162,1);
+	color: #1E4F92;
 }
 
 /* Green */
@@ -274,6 +278,7 @@
 	background-image: -webkit-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
 	background-image: -ms-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
 	background-image: linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+	color: #1D7819;
 }
 
 .chill-button.green:active {
@@ -284,6 +289,7 @@
 	background-image: -ms-linear-gradient(90deg, rgb(182,237,176) 0%, rgb(112,201,101) 100%);
 	background-image: linear-gradient(90deg, rgb(182,237,176) 0%, rgb(112,201,101) 100%);
 	box-shadow: inset 0 0 5px rgba(26,154,72,1);
+	color: #1D7819;
 }
 
 /* Orange */
@@ -307,6 +313,7 @@
 	background-image: -webkit-linear-gradient(90deg, rgb(248,169,91) 0%, rgb(244,210,170) 100%);
 	background-image: -ms-linear-gradient(90deg, rgb(248,169,91) 0%, rgb(244,210,170) 100%);
 	background-image: linear-gradient(90deg, rgb(248,169,91) 0%, rgb(244,210,170) 100%);
+	color: #A8580B;
 }
 
 .chill-button.orange:active {
@@ -317,6 +324,7 @@
 	background-image: -ms-linear-gradient(90deg, rgb(244,197,140) 0%, rgb(250,153,60) 100%);
 	background-image: linear-gradient(90deg, rgb(244,197,140) 0%, rgb(250,153,60) 100%);
 	box-shadow: inset 0 0 5px rgba(184,129,39,1);
+	color: #A8580B;
 }
 
 /* Purple */
@@ -341,6 +349,7 @@
 	background-image: -ms-linear-gradient(90deg, rgb(154,135,235) 0%, rgb(199,188,242) 100%);
 	background-image: linear-gradient(90deg, rgb(154,135,235) 0%, rgb(199,188,242) 100%);
 	border: 1px solid #571DAC;
+	color: #571DAC;
 }
 
 .chill-button.purple:active {
@@ -351,6 +360,7 @@
 	background-image: -ms-linear-gradient(90deg, rgb(188,173,242) 0%, rgb(137,115,232) 100%);
 	background-image: linear-gradient(90deg, rgb(188,173,242) 0%, rgb(137,115,232) 100%);
 	box-shadow: inset 0 0 5px rgba(124,87,191,1);
+	color: #571DAC;
 }
 
 /* Red */
@@ -374,6 +384,7 @@
 	background-image: -webkit-linear-gradient(90deg , rgb(216,90,93) 0%, rgb(243,167,169) 100%);
 	background-image: -ms-linear-gradient(90deg , rgb(216,90,93) 0%, rgb(243,167,169) 100%);
 	background-image: linear-gradient(90deg , rgb(216,90,93) 0%, rgb(243,167,169) 100%);
+	color: #A7000F;
 }
 
 .chill-button.red:active {
@@ -384,6 +395,7 @@
 	background-image: -ms-linear-gradient(90deg, rgb(243,146,147) 0%, rgb(208,69,72) 100%);
 	background-image: linear-gradient(90deg, rgb(243,146,147) 0%, rgb(208,69,72) 100%);
 	box-shadow: inset 0 0 5px rgba(167,32,35,1);
+	color: #A7000F;
 }
 
 /* Yellow */
@@ -442,6 +454,7 @@
 	background-image: -webkit-linear-gradient(90deg, rgb(246,246,246) 0%, rgb(254,254,254) 100%);
 	background-image: -ms-linear-gradient(90deg, rgb(246,246,246) 0%, rgb(254,254,254) 100%);
 	background-image: linear-gradient(90deg, rgb(246,246,246) 0%, rgb(254,254,254) 100%);
+	color: #2B2C2B;
 }
 
 .chill-button.white:active {
@@ -452,6 +465,7 @@
 	background-image: -ms-linear-gradient(90deg, rgb(254,254,254) 0%, rgb(246,246,246) 100%);
 	background-image: linear-gradient(90deg, rgb(254,254,254) 0%, rgb(246,246,246) 100%);
 	box-shadow: inset 0 0 5px rgba(187,187,187,1);
+	color: #2B2C2B;
 }
 
 /* Columns
