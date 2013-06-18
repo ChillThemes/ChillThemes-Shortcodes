@@ -1,5 +1,3 @@
-The shortcodes you see here are powered by our very <a href="https://github.com/chillthemes/chillthemes-shortcodes" target="_blank">ChillThemes Shortcodes</a> plugin. These shortcodes should work with any theme, but were made specifically for our themes. This plugin provides you with an extra icon on the <a href="http://en.support.wordpress.com/visual-editor" target="_blank">Visual Editor</a> that lets you easily add shortcodes into any post (or page).
-
 <h2>Accordion</h2>
 
 [chill_accordion]

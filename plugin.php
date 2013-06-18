@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: ChillThemes Shortcodes
-Plugin URI: https://github.com/chillthemes/chillthemes-shortcodes
+Plugin URI: http://wordpress.org/plugins/chillthemes-shortcodes
 Description: Provides custom shortcodes for use in any of our Chill Themes.
 Version: 1.5
 Author: ChillThemes
