@@ -18,9 +18,21 @@ You can see a demo of all the shortcodes this plugin adds below:
 
 == Installation ==
 
-1. Unzip and upload 'chillthemes-shortcodes' to the '/wp-content/plugins/' directory
-2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. On the Visual Editor of a new page or post you'll see a pen icon that allows to you easily insert a variety of shortcodes.
+= Using The WordPress Plugin Upload =
+
+1. Log in and navigate to Plugins &rarr; Add New.
+2. Type **ChillThemes Shortcodes** into the Search input and click the **Search Plugin** button.
+3. Locate the **ChillThemes Shortcodes** in the list of search results and click the **Install Now** button.
+4. Click the **Activate Plugin** link at the bottom of the install screen.
+5. You're done! You'll see a few new widgets in Appearance -> Widgets.
+
+= Using FTP =
+
+1. Download the **ChillThemes Shortcodes** plugin from WordPress.org.
+2. Unzip the package and move it to your plugins directory.
+3. Log into WordPress and navigate to the **Plugins** screen.
+4. Locate **ChillThemes Shortcodes** in the list of available plugins and click the **Activate** link.
+5. You're done! You'll see a few new widgets in Appearance -> Widgets.
 
 == Frequently Asked Questions ==
 
