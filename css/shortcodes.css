@@ -628,6 +628,24 @@
 	padding: 20px;
 }
 
+/* Unordered List
+-------------------------------------------------------------------------------------*/
+.chill-list {
+	margin-left: 0;
+}
+
+.chill-list li {
+	background: none;
+	border: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.chill-list li .chill-icon {
+	margin: 0 5px 0 0;
+}
+
 /* Media Query
 -------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 767px) {

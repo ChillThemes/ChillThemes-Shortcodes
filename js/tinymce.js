@@ -73,6 +73,7 @@
 					c = b.addMenu({ title: 'Miscellaneous' });
 					a.render( c, 'Emphasis', 'emphasis' );
 					a.render( c, 'Pricing Table', 'pricing_table' );
+					a.render( c, 'Unordered List', 'unordered_list' );
 
 				});
 	            
@@ -262,6 +263,11 @@
 					/* Pricing Table */
 					if ( id == 'pricing_table' ) {
 						tinyMCE.activeEditor.selection.setContent( '[chill_pricing plan="Pro" price="$6" size="one_third" background="FFF" border_radius="3" box_shadow="5" plan_color="000" price_color="666" content_color="999"]<br />Virtual Terminal<br />Unlimited Spaces<br />[chill_button color="black"]Button[/chill_button]<br />[/chill_pricing]<br /><br />[chill_pricing plan="Premium" price="$12" size="one_third" background="FFF" border_radius="3" box_shadow="5" plan_color="1D7819" price_color="666" content_color="999"]<br />Digital Delivery<br />Virtual Terminal<br />Unlimited Spaces<br />[chill_button color="green"]Button[/chill_button]<br />[/chill_pricing]<br /><br />[chill_pricing plan="Platinum" price="$24" size="one_third_last" background="FFF" border_radius="3" box_shadow="5" plan_color="A7000F" price_color="000" content_color="999"]<br />Recurring Billing<br />Digital Delivery<br />Virtual Terminal<br />Unlimited Spaces<br />[chill_button color="red"]Button[/chill_button]<br />[/chill_pricing]' );
+					}
+
+					/* Unordered List */
+					if ( id == 'unordered_list' ) {
+						tinyMCE.activeEditor.selection.setContent( '[chill_list]<br />[chill_list_item icon="arrow-right" icon_color="333" icon_size="14"]List Item[/chill_list_item]<br />[chill_list_item icon="arrow-right" icon_color="333" icon_size="14"]List Item[/chill_list_item]<br />[chill_list_item icon="arrow-right" icon_color="333" icon_size="14"]List Item[/chill_list_item]<br />[chill_list_item icon="arrow-right" icon_color="333" icon_size="14"]List Item[/chill_list_item]<br />[/chill_list]' );
 					}
 
 					return false;

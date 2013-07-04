@@ -37,7 +37,7 @@ function chillthemes_shortcode_accordion_section( $atts, $content = '' ) {
 		$atts
 	));
 
-	$icon = ($icon) ? '<i class="icon-' . $icon . '"></i> ' : '';
+	$icon = ($icon) ? '<i class="chill-icon icon-' . $icon . '"></i> ' : '';
 
 	return '<h3 class="chill-accordion-trigger">' . $icon . esc_html( $title ) . '</h3><div>' . do_shortcode( $content ) . '</div>';
 }
@@ -59,7 +59,7 @@ function chillthemes_shortcode_alert( $atts, $content = '' ) {
 
 	$style = '';
 	if ($border_radius) { $style .= 'border-radius: ' . $border_radius . 'px;'; }
-	$icon = ($icon) ? '<i class="icon-' . $icon . ' ' . $icon_float . '"></i> ' : '';
+	$icon = ($icon) ? '<i class="chill-icon icon-' . $icon . ' ' . $icon_float . '"></i> ' : '';
 	if ($margin_bottom) { $style .= 'margin-bottom: ' . $margin_bottom . 'px;'; }
 	if ($margin_top) { $style .= 'margin-top: ' . $margin_top . 'px;'; }
 
@@ -95,7 +95,7 @@ function chillthemes_shortcode_button( $atts, $content = '' ) {
 	$style = '';
 	if ($border_radius) { $style .= 'border-radius: ' . $border_radius . 'px;'; }
 	if ($box_shadow) { $style .= 'box-shadow: 0 0 ' . $box_shadow . 'px rgba(0,0,0,0.5);'; }
-	$icon = ($icon) ? '<i class="icon-' . $icon . '"></i> ' : '';
+	$icon = ($icon) ? '<i class="chill-icon icon-' . $icon . '"></i> ' : '';
 	if ($margin_bottom) { $style .= 'margin-bottom: ' . $margin_bottom . 'px;'; }
 	if ($margin_left) { $style .= 'margin-left: ' . $margin_left . 'px;'; }
 	if ($margin_right) { $style .= 'margin-right: ' . $margin_right . 'px;'; }
@@ -126,7 +126,7 @@ function chillthemes_shortcode_columns( $atts, $content = '' ) {
 		$atts
 	));
 
-	$icon = ($icon) ? '<i class="icon-' . esc_attr( $icon ) . '" style="background: #' . esc_attr( $icon_background ) . '; border-radius: ' . esc_attr( $icon_radius ) . 'px; color: #' . esc_attr( $icon_color ) . '; font-size: ' . esc_attr( $icon_size ) . 'px; padding: ' . esc_attr( $icon_padding ) . 'px;"></i> ' : '';
+	$icon = ($icon) ? '<i class="chill-icon icon-' . esc_attr( $icon ) . '" style="background: #' . esc_attr( $icon_background ) . '; border-radius: ' . esc_attr( $icon_radius ) . 'px; color: #' . esc_attr( $icon_color ) . '; font-size: ' . esc_attr( $icon_size ) . 'px; padding: ' . esc_attr( $icon_padding ) . 'px;"></i> ' : '';
 	$size = ($size) ? '' . $size : '';
 
 	if ( strpos( $size, 'last' ) === false ) {
@@ -221,6 +221,35 @@ function chillthemes_shortcode_tab( $atts, $content = '' ) {
 	return '<div id="chill-' . sanitize_title( $title ) . '" class="tab-content">' . do_shortcode( $content ) . '</div>';
 }
 add_shortcode( 'chill_tab', 'chillthemes_shortcode_tab' );
+
+/* Shortcode to display an unordered list. */
+function chillthemes_list( $atts, $content ) {
+	$out = '<ul class="chill-list">';
+		$out .= do_shortcode( $content );
+	$out .= '</ul><!-- .chill-list -->';
+
+	return $out;
+}
+add_shortcode( 'chill_list', 'chillthemes_list' );
+
+/* Shortcode to display an unordered list item. */
+function chillthemes_list_item( $atts, $content ) {
+	extract( shortcode_atts(
+		array(
+			'icon' => '',
+			'icon_color' => 'FFF',
+			'icon_size' => ''
+		),
+		$atts
+	));
+
+	$icon = ($icon) ? '<i class="chill-icon icon-' . esc_attr( $icon ) . '" style="color: #' . esc_attr( $icon_color ) . '; font-size: ' . esc_attr( $icon_size ) . 'px;"></i> ' : '';
+
+	$out = '<li>' . $icon . do_shortcode( $content ) . '</li>';
+
+	return $out;
+}
+add_shortcode( 'chill_list_item', 'chillthemes_list_item' );
 
 /* Shortcode to embed a Vimeo video. */
 function chillthemes_shortcode_vimeo( $atts ) {

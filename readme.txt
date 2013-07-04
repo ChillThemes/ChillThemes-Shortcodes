@@ -4,7 +4,7 @@ Donate link: http://chillthemes.com/donate
 Tags: chillthemes, shortcodes
 Requires at least: 3.0
 Tested up to: 3.6
-Stable tag: 1.5
+Stable tag: 1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@ Enables custom shortcodes for use in any of our Chill Themes.
 
 You can see a demo of all the shortcodes this plugin adds below:
 
-* http://demos.chillthemes.com/luminaria/shortcodes
+* http://shortcodes.chillthemes.com
 
 == Installation ==
 
@@ -47,6 +47,9 @@ There's no need to prefix it with 'icon-', if you do, the icon won't display.
 If you look inside of the */css/font-awesome.css* file, at the very bottom you'll find some social icons you can also use.
 
 == Changelog ==
+
+= 1.6 =
+* Added an unordered list shortcode.
 
 = 1.5 =
 * Added a pricing table shortcode.

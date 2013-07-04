@@ -23,6 +23,8 @@ Section Two Content
 
 <h2>Buttons</h2>
 
+<p>Display a button along with any of the icons provided by <a href="http://fortawesome.github.io/Font-Awesome" target="_blank">Font Awesome</a> icon font.</p>
+
 [chill_button color="black" url="#nowhere" title="Visit Link" target="self" border_radius="0" box_shadow="1" icon="ok" margin_bottom="20" margin_left="0" margin_right="10" margin_top="0"]Button[/chill_button]
 
 [chill_button color="blue" url="#nowhere" title="Visit Link" target="self" border_radius="0" box_shadow="1" icon="ok" margin_bottom="20" margin_left="0" margin_right="10" margin_top="0"]Button[/chill_button]
@@ -76,6 +78,44 @@ Tab Content One
 Tab Content Two
 [/chill_tab]
 [/chill_tabs]
+
+<h2>Unordered List</h2>
+
+[chill_column size="one_fourth"]
+[chill_list]
+[chill_list_item icon="arrow-right" icon_color="333" icon_size="14"]List Item[/chill_list_item]
+[chill_list_item icon="arrow-right" icon_color="333" icon_size="14"]List Item[/chill_list_item]
+[chill_list_item icon="arrow-right" icon_color="333" icon_size="14"]List Item[/chill_list_item]
+[chill_list_item icon="arrow-right" icon_color="333" icon_size="14"]List Item[/chill_list_item]
+[/chill_list]
+[/chill_column]
+
+[chill_column size="one_fourth"]
+[chill_list]
+[chill_list_item icon="ok" icon_color="468847" icon_size="14"]List Item[/chill_list_item]
+[chill_list_item icon="ok" icon_color="468847" icon_size="14"]List Item[/chill_list_item]
+[chill_list_item icon="ok" icon_color="468847" icon_size="14"]List Item[/chill_list_item]
+[chill_list_item icon="ok" icon_color="468847" icon_size="14"]List Item[/chill_list_item]
+[/chill_list]
+[/chill_column]
+
+[chill_column size="one_fourth"]
+[chill_list]
+[chill_list_item icon="remove" icon_color="B94A48" icon_size="14"]List Item[/chill_list_item]
+[chill_list_item icon="remove" icon_color="B94A48" icon_size="14"]List Item[/chill_list_item]
+[chill_list_item icon="remove" icon_color="B94A48" icon_size="14"]List Item[/chill_list_item]
+[chill_list_item icon="remove" icon_color="B94A48" icon_size="14"]List Item[/chill_list_item]
+[/chill_list]
+[/chill_column]
+
+[chill_column size="one_fourth_last"]
+[chill_list]
+[chill_list_item icon="exclamation" icon_color="C09853" icon_size="14"]List Item[/chill_list_item]
+[chill_list_item icon="exclamation" icon_color="C09853" icon_size="14"]List Item[/chill_list_item]
+[chill_list_item icon="exclamation" icon_color="C09853" icon_size="14"]List Item[/chill_list_item]
+[chill_list_item icon="exclamation" icon_color="C09853" icon_size="14"]List Item[/chill_list_item]
+[/chill_list]
+[/chill_column]
 
 <h2>YouTube &amp; Vimeo</h2>
 
